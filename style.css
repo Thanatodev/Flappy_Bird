@@ -1,0 +1,103 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  background-color: #00163f;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  font-family: "Press Start 2P", cursive;
+  padding: 0 50px;
+}
+h1 {
+  min-width: 320px;
+}
+[flappy] {
+  display: flex;
+  position: relative;
+  border: 5px solid #021c4dd8;
+  border-radius: 15px;
+  min-width: 320px;
+  max-width: 700px;
+  height: 500px;
+  margin: 20px auto;
+  overflow: hidden;
+  background-color: #0099ff;
+}
+.progresso {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 40px;
+  z-index: 100;
+}
+.pássaro,
+.passaro {
+  position: absolute;
+  width: 60px;
+  height: 45px;
+  left: calc(50% - 30px);
+}
+.canos {
+  position: absolute;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.Cano {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+.borda {
+  height: 30px;
+  width: 130px;
+  background: linear-gradient(90deg, #639301, #a5e82e);
+  border: solid 2px black;
+}
+.corpo {
+  width: 110px;
+  height: 120px;
+  background: linear-gradient(90deg, #639301, #a5e82e);
+  border-left: solid 2px black;
+  border-right: solid 2px black;
+}
+.tela-inicial {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 40px;
+}
+.iniciar,
+.reiniciar {
+  font-size: 24px;
+  color: white;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-family: "Press Start 2P", cursive;
+  padding: 10px;
+  transition: transform 0.3s;
+}
+.reiniciar {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.iniciar:hover {
+  background: none;
+  transform: scale(1.05);
+}
+.reiniciar:hover {
+  transform: translate(-50%, -50%) scale(1.05);
+}
